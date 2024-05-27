@@ -1,0 +1,47 @@
+.accordionListWithSearch {
+  display: flex;
+  height: 100dvh;
+  flex-direction: row;
+}
+
+.filterContainer {
+  width: 250px;
+  height: 100%;
+  background-color: #f6f6f6;
+  padding: 20px;
+  box-sizing: border-box;
+  border-right: 1px solid #dddddd;
+}
+.resultContainer {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.filterInputContainer {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.inputWrapper {
+  border-radius: 6px;
+  padding: 4px 8px;
+  border: 1px solid #e4e4e7;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.inputWrapper input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  height: 24px;
+}
+.inputWrapper:focus-within {
+  border: 1px solid #a1a1aa;
+}

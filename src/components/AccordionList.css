@@ -1,0 +1,70 @@
+.userTable {
+  border-collapse: collapse;
+  min-width: calc(70%);
+}
+
+.userTable tr th,
+.userTable tr td {
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+  padding: 10px 20px;
+}
+
+.userTable tr.detailColumn {
+  background-color: #f6f6f6;
+}
+
+.userTable td {
+  cursor: pointer;
+}
+.detailColumnContainer {
+  border: 0px !important;
+  padding: 0px !important;
+}
+
+/* .detailColumnContainer.open {
+  border-bottom: 1px solid #dddddd;
+  padding: 10px 20px;
+} */
+
+.detailColumnContainer .detailColumn {
+  transition: max-height 0.3s ease;
+  max-height: 0px !important;
+  overflow: hidden;
+}
+
+.detailColumnContainer.open .detailColumn {
+  padding: 20px;
+  max-height: unset !important;
+  background-color: #f6f6f6;
+}
+
+.detailTable {
+  min-width: 80%;
+  border-collapse: collapse;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.actionsColumn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.collapseRowButton {
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  transition: all 0.2s;
+}
+
+.collapseRowButton.open {
+  transform: rotate(90deg);
+}
